@@ -48,10 +48,12 @@ Good luck !
 Intuitively, the WSL2 is a lightweight Linux Vitual Machine based on the Hypervisor, same as Windows. 
 
 Advantages is: 
+- Almost full featured Linux
 - Shared RAM and ROM, 
+- CUDA available 
 
 Disadvantage is : 
-- Shared RAM and ROM lol...
+- Linux Distro can only stay at your Disk-C...(you might need a big "C:\\")
 
 (I don't know much about operating system, tell me if I say something wrong xD)
 
@@ -184,4 +186,4 @@ todo
 - [Microsoft : Windows Subsystem for Linux Installation Guide for Windows 10](https://docs.microsoft.com/en-us/windows/wsl/install-win10)
 - [conda managing environments](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html)
 - [windows terminal schemes](https://docs.microsoft.com/en-us/windows/terminal/customize-settings/color-schemes)
-- 
+- [CUDA in WSL](https://developer.nvidia.com/cuda/wsl)
