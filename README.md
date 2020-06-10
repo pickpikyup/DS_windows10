@@ -29,10 +29,14 @@ Good luck !
     - [2. Install and Set WSL-2](#2-install-and-set-wsl-2)
     - [3. Install Linux Distribution from Microsoft Store](#3-install-linux-distribution-from-microsoft-store)
   - [Tutorial 2 : Set up Data Science Environment in WSL2](#tutorial-2--set-up-data-science-environment-in-wsl2)
-    - [1. Configuration for Windows 10](#1-configuration-for-windows-10)
-    - [2. Configurtion for WSL](#2-configurtion-for-wsl)
+    - [1. Configuration for WSL](#1-configuration-for-wsl)
+    - [2. Configuration for Windows 10](#2-configuration-for-windows-10)
+      - [Download VS code in Windows 10](#download-vs-code-in-windows-10)
+      - [Configure Extension for WSL in VS code](#configure-extension-for-wsl-in-vs-code)
   - [Tutorial 3 : Best Terminal (Option)](#tutorial-3--best-terminal-option)
-- [TODO list](#todo-list)
+  - [Tutorial 4 : Work with git and ssh (Option)](#tutorial-4--work-with-git-and-ssh-option)
+  - [TODO list](#todo-list)
+  - [Some Links](#some-links)
 
 
 ## What is this WSL ?
@@ -110,19 +114,74 @@ Choice what u want and install it!
 ![MS store](img/win_store.png)
 
 
+**PS** : Then, Initialize the distro,  if u want some helps:
+- [ create a user account and password for your new Linux distribution.](https://docs.microsoft.com/en-us/windows/wsl/user-support)
+
+When Linux Distro installed successfully, you will see it:
+
+![ubuntu](img/ubuntu.png)
+
 ## Tutorial 2 : Set up Data Science Environment in WSL2
 
-### 1. Configuration for Windows 10
+### 1. Configuration for WSL
 
-### 2. Configurtion for WSL
+Run following to install [Miniconda](https://docs.conda.io/en/latest/miniconda.html) and useful libraries
 
+```bash
+$ wget  https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+$ bash Miniconda3-latest-Linux-x86_64.sh
+
+# install jupyter and commun packages
+$ conda install jupyter
+$ pip install urllib requests pandas scikit-learn matplotlib seaborn plotly tensorflow 
+```
+
+
+### 2. Configuration for Windows 10
+#### Download VS code in Windows 10
+- [download VS Code](https://code.visualstudio.com/)
+
+#### Configure Extension for WSL in VS code 
+Install Some Extensions:
+- Remote - WSL
+- Anaconda Extension Pack (Optional)
+- GitHub (Optional)
+- .NET Install Tool (Optional)
+
+With the Remote-WSL extension, we can get into the Linux SubSystem and work on it!  
+
+Click Here and connect to your WSL2 in a New Windows
+
+![VS code](img/Remote_WSL.png)
+
+If connection goes well, you will see
+
+![VS code](img/Remote_WSL2.png)
+
+Then re-install those Extensions in your WSL
+
+![VS code](img/VS_code.png)
+
+**Congratulations, your Linux Env is ready for you !**
 
 ## Tutorial 3 : Best Terminal (Option)
+todo
+## Tutorial 4 : Work with git and ssh (Option)
+todo
 
 
-
-# TODO list
+## TODO list
 
 - [x] Install WSL
-- [ ] Configuration WSL and Windows10
+- [x] Configuration WSL and Windows10
 - [ ] Windows Terminal (Preview)
+- [ ] git and ssh
+
+
+## Some Links
+
+- [Microsoft WSL2 FAQ](https://docs.microsoft.com/en-us/windows/wsl/wsl2-faq)
+- [Microsoft : Windows Subsystem for Linux Installation Guide for Windows 10](https://docs.microsoft.com/en-us/windows/wsl/install-win10)
+- [conda managing environments](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html)
+- [windows terminal schemes](https://docs.microsoft.com/en-us/windows/terminal/customize-settings/color-schemes)
+- 
