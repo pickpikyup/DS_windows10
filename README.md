@@ -167,7 +167,10 @@ Then re-install those Extensions in your WSL
 **Congratulations, your Linux Env is ready for you !**
 
 ## Tutorial 3 : Best Terminal (Option)
-todo
+
+As for 
+
+
 ## Tutorial 4 : Work with git and ssh (Option)
 todo
 
